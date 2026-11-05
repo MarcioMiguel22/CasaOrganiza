@@ -314,7 +314,6 @@ func New(buildstr string, description string) (*Config, error) {
 			return &cfg, fmt.Errorf("invalid meilisearch config: %w", err)
 		}
 	}
-
 	return &cfg, nil
 }
 

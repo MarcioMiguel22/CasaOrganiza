@@ -254,6 +254,7 @@
   import MdiLogout from "~icons/mdi/logout";
   import MdiFileDocumentMultiple from "~icons/mdi/file-document-multiple";
   import MdiChevronRight from "~icons/mdi/chevron-right";
+  import MdiPackageVariant from "~icons/mdi/package-variant";
 
   import {
     Sidebar,
@@ -412,6 +413,13 @@
       id: 0,
       name: computed(() => t("menu.home")),
       to: "/home",
+    },
+    {
+      icon: MdiPackageVariant,
+      active: computed(() => route.path === "/pantry"),
+      id: 8,
+      name: computed(() => t("menu.pantry")),
+      to: "/pantry",
     },
     {
       icon: MdiFileTree,

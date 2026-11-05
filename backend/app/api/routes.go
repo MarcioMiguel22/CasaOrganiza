@@ -177,6 +177,14 @@ func (a *app) mountRoutes(r *chi.Mux, chain *errchain.ErrChain, repos *repo.AllR
 		r.Get("/groups/statistics/locations", chain.ToHandlerFunc(v1Ctrl.HandleGroupStatisticsLocations(), userMW...))
 		r.Get("/groups/statistics/tags", chain.ToHandlerFunc(v1Ctrl.HandleGroupStatisticsTags(), userMW...))
 
+		// Internal pantry: stock, expiry dates and shopping list live in HomeBox.
+		r.Get("/pantry", chain.ToHandlerFunc(v1Ctrl.HandlePantryOverview(), userMW...))
+		r.Get("/pantry/products", chain.ToHandlerFunc(v1Ctrl.HandlePantryProductsGetAll(), userMW...))
+		r.Post("/pantry/products", chain.ToHandlerFunc(v1Ctrl.HandlePantryProductCreate(), userMW...))
+		r.Put("/pantry/products/{id}", chain.ToHandlerFunc(v1Ctrl.HandlePantryProductUpdate(), userMW...))
+		r.Post("/pantry/products/{id}/consume", chain.ToHandlerFunc(v1Ctrl.HandlePantryProductConsume(), userMW...))
+		r.Post("/pantry/products/{id}/shopping", chain.ToHandlerFunc(v1Ctrl.HandlePantryProductShoppingToggle(), userMW...))
+
 		// Action endpoints
 		r.Post("/actions/ensure-asset-ids", chain.ToHandlerFunc(v1Ctrl.HandleEnsureAssetID(), userMW...))
 		r.Post("/actions/zero-item-time-fields", chain.ToHandlerFunc(v1Ctrl.HandleItemDateZeroOut(), userMW...))
