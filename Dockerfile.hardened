@@ -61,7 +61,7 @@ RUN rm -rf ./app/api/public
 COPY --from=frontend-builder /app/.output/public ./app/api/static/public
 
 # Use cache for Go build artifacts to build Homebox API
-RUN --mount=type=cache,id=s/dc26f92f-76b5-4b76-83f8-1c87cbdca268-/root/.cache/go-build,target=/root/.cache/go-build \
+RUN --mount=type=cache,id=s/4f3cc1a3-bd82-46ff-ac52-c091588b9ba5-/root/.cache/go-build,target=/root/.cache/go-build \
      CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH go build \
         -ldflags "-s -w -X main.commit=$COMMIT -X main.buildTime=$BUILD_TIME -X main.version=$VERSION" \
         -tags nodynamic -o /go/bin/api -v ./app/api/*.go
@@ -94,7 +94,7 @@ func main() {
 }
 EOF
 
-RUN --mount=type=cache,id=s/dc26f92f-76b5-4b76-83f8-1c87cbdca268-/root/.cache/go-build,target=/root/.cache/go-build \
+RUN --mount=type=cache,id=s/4f3cc1a3-bd82-46ff-ac52-c091588b9ba5-/root/.cache/go-build,target=/root/.cache/go-build \
     CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH \
     go build -ldflags "-s -w" -o /go/bin/hc /tmp/healthcheck.go
 
