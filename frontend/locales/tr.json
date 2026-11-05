@@ -695,7 +695,7 @@
             "ensure_import_refs_sub": "Envanterinizdeki tüm öğelerin geçerli bir import_ref alanına sahip olmasını sağlar. Bu, ayarlanmamış import_ref alanına sahip her öğe için rastgele 8 karakterli bir dize oluşturarak yapılır.",
             "set_primary_photo": "Ana Fotoğrafı Ayarla",
             "set_primary_photo_button": "Ana Fotoğrafı Ayarla",
-            "set_primary_photo_sub": "Homebox'un v0.10.0 sürümünde, fotoğraf türündeki ekler için birincil görüntü alanı eklendi. Bu işlem, veritabanındaki ekler dizisindeki ilk görüntüyü, eğer zaten ayarlanmamışsa, birincil görüntü alanı olarak ayarlayacaktır. '<a class=\"link\" href=\"https://github.com/hay-kot/homebox/pull/576\">'GitHub #576'yı Gör'</a>",
+            "set_primary_photo_sub": "CasaOrganiza'un v0.10.0 sürümünde, fotoğraf türündeki ekler için birincil görüntü alanı eklendi. Bu işlem, veritabanındaki ekler dizisindeki ilk görüntüyü, eğer zaten ayarlanmamışsa, birincil görüntü alanı olarak ayarlayacaktır. '<a class=\"link\" href=\"https://github.com/hay-kot/homebox/pull/576\">'GitHub #576'yı Gör'</a>",
             "zero_datetimes": "Sıfır Öğesi Tarih Saatleri",
             "zero_datetimes_button": "Sıfır Öğe Tarih Saatleri",
             "zero_datetimes_sub": "Tarih saat alanlarındaki tüm zaman değerlerini en baştaki tarihe sıfırlar. Bu, sitenin geliştirilmesi sırasında erken aşamalarda ortaya çıkan ve zaman değerinin saklanmasına neden olan bir hatayı düzeltmek içindir; bu da tarih alanlarının doğru değerler göstermesinde sorunlara yol açıyordu. '<a class=\"link\" href=\"https://github.com/hay-kot/homebox/issues/236\" target=\"_blank\">'Daha fazla bilgi için Github Sorunu #236'ya Bakın.'</a>'"
@@ -705,12 +705,12 @@
         "import_export_set": {
             "export": "Envanteri Dışa Aktar",
             "export_button": "Envanteri Dışa Aktar",
-            "export_sub": "Homebox için standart CSV formatını dışa aktarır. Bu, envanterinizdeki tüm öğeleri dışa aktaracaktır.",
+            "export_sub": "CasaOrganiza için standart CSV formatını dışa aktarır. Bu, envanterinizdeki tüm öğeleri dışa aktaracaktır.",
             "import": "Envanteri İçe Aktar",
             "import_button": "Envanteri İçe Aktar",
-            "import_sub": "Homebox için standart CSV formatını içe aktarır. '<code>'HB.import_ref'</code>' sütunu olmadan, bu mevcut envanterinizdeki herhangi bir öğeyi '<b>'üzerine yazmaz'</b>', yalnızca yeni öğeler ekler. '<code>'HB.import_ref'</code>' sütununa sahip satırlar, varsa aynı import_ref'e sahip mevcut öğelerle birleştirilir."
+            "import_sub": "CasaOrganiza için standart CSV formatını içe aktarır. '<code>'HB.import_ref'</code>' sütunu olmadan, bu mevcut envanterinizdeki herhangi bir öğeyi '<b>'üzerine yazmaz'</b>', yalnızca yeni öğeler ekler. '<code>'HB.import_ref'</code>' sütununa sahip satırlar, varsa aynı import_ref'e sahip mevcut öğelerle birleştirilir."
         },
-        "import_export_sub": "Envanterinizi bir CSV dosyasına içe ve dışa aktarın. Bu, envanterinizi yeni bir Homebox örneğine taşımak için faydalıdır.",
+        "import_export_sub": "Envanterinizi bir CSV dosyasına içe ve dışa aktarın. Bu, envanterinizi yeni bir CasaOrganiza örneğine taşımak için faydalıdır.",
         "reports": "Raporlar",
         "reports_set": {
             "asset_labels": "Varlık Kimlik Etiketleri",

@@ -20,7 +20,7 @@
   const { t } = useI18n();
 
   useHead({
-    title: computed(() => `HomeBox | ${t("pages.label_templates.title")}`),
+    title: computed(() => `CasaOrganiza | ${t("pages.label_templates.title")}`),
   });
 
   const { templates, refresh, pending } = useLabelTemplates();

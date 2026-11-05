@@ -19,7 +19,7 @@
   });
 
   useHead({
-    title: `HomeBox | ${t("menu.pantry")}`,
+    title: `CasaOrganiza | ${t("menu.pantry")}`,
   });
 
   const overview = ref<PantryOverview | null>(null);

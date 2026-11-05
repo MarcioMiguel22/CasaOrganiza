@@ -185,7 +185,7 @@
             <div class="flex h-1/2 items-center gap-2 sm:h-auto">
               <SidebarTrigger variant="default" />
               <NuxtLink to="/home">
-                <AppHeaderText class="h-6" />
+                <span class="text-lg font-semibold tracking-tight">CasaOrganiza</span>
               </NuxtLink>
             </div>
             <div class="sm:grow" />
@@ -298,7 +298,6 @@
   import AppScannerModal from "~/components/App/ScannerModal.vue";
   import AppLogo from "~/components/App/Logo.vue";
   import AppHeaderDecor from "~/components/App/HeaderDecor.vue";
-  import AppHeaderText from "~/components/App/HeaderText.vue";
   import CollectionSelector from "~/components/Collection/Selector.vue";
   import CollectionCreateModal from "~/components/Collection/CreateModal.vue";
   import CollectionJoinModal from "~/components/Collection/JoinModal.vue";

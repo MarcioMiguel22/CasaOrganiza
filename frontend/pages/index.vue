@@ -24,7 +24,7 @@
   const { t } = useI18n();
 
   useHead({
-    title: "HomeBox | " + t("index.title"),
+    title: "CasaOrganiza | " + t("index.title"),
   });
 
   definePageMeta({
@@ -245,10 +245,9 @@
         }"
       >
         <div class="z-10">
-          <h2 class="mt-1 flex text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            HomeB
-            <AppLogo class="-mb-4 w-12" />
-            x
+          <h2 class="mt-1 flex items-center gap-3 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+            CasaOrganiza
+            <AppLogo class="w-12" />
           </h2>
           <p
             class="ml-1 text-lg"

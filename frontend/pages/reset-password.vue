@@ -13,7 +13,7 @@
   const { t } = useI18n();
 
   useHead({
-    title: "HomeBox | " + t("index.reset_password_title"),
+    title: "CasaOrganiza | " + t("index.reset_password_title"),
   });
 
   definePageMeta({

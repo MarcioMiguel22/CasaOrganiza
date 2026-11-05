@@ -29,7 +29,7 @@
   });
 
   useHead({
-    title: computed(() => `HomeBox | ${t("pages.label_templates.batch.title")}`),
+    title: computed(() => `CasaOrganiza | ${t("pages.label_templates.batch.title")}`),
   });
 
   const api = useUserApi();

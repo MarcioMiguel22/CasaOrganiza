@@ -26,7 +26,7 @@
   });
 
   useHead({
-    title: "HomeBox | " + t("global.items"),
+    title: "CasaOrganiza | " + t("global.items"),
   });
 
   const searchLocked = ref(false);

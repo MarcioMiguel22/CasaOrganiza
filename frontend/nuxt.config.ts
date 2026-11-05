@@ -84,9 +84,9 @@ export default defineNuxtConfig({
       enabled: false,
     },
     manifest: {
-      name: "Homebox",
-      short_name: "Homebox",
-      description: "Home Inventory App",
+      name: "CasaOrganiza",
+      short_name: "CasaOrganiza",
+      description: "Gestão e organização da casa",
       theme_color: "#5b7f67",
       start_url: "/home",
       icons: [

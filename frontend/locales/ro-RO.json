@@ -454,7 +454,7 @@
             "ensure_import_refs_sub": "Garantează că toate articolele din inventar au un câmp import_ref valid. Acest lucru se face prin generarea unui șir de 8 caractere aleatoare pentru fiecare articol ce nu are câmp import_ref.",
             "set_primary_photo": "Setează ca Imagine Principală",
             "set_primary_photo_button": "Setează ca Imagine Principală",
-            "set_primary_photo_sub": "În versiunea v0.10.0 a Homebox, câmpul de imagine primară a fost adăugat la atașamentele de tip fotografie. Această acțiune va seta câmpul de imagine primară la prima imagine din matricea de atașamente din baza de date, dacă acest lucru nu este facut deja. '<a class=\"link\" href=\"https://github.com/hay-kot/homebox/pull/576\">'Vezi GitHub PR #576'</a>'",
+            "set_primary_photo_sub": "În versiunea v0.10.0 a CasaOrganiza, câmpul de imagine primară a fost adăugat la atașamentele de tip fotografie. Această acțiune va seta câmpul de imagine primară la prima imagine din matricea de atașamente din baza de date, dacă acest lucru nu este facut deja. '<a class=\"link\" href=\"https://github.com/hay-kot/homebox/pull/576\">'Vezi GitHub PR #576'</a>'",
             "zero_datetimes": "Zero articol Data Ore",
             "zero_datetimes_button": "Zero articol Data Ore",
             "zero_datetimes_sub": "Resetează valoarea de timp pentru toate câmpurile de dată și oră din inventar la începutul datei. Acesta este un fix pentru un bug care a fost introdus la începutul dezvoltării și care a cauzat valoarea timpului să fie stocată cu timpul ceea ce a provocat probleme cu afișarea corectă a câmpurilor de dată. '<a class=\"link\" href=\"https://github.com/hay-kot/homebox/issues/236\" target=\"_blank\">'Vezi Github Issue #236 pentru mai multe detalii.'</a>'"
@@ -464,12 +464,12 @@
         "import_export_set": {
             "export": "Exportă Inventar",
             "export_button": "Exportă Inventar",
-            "export_sub": "Exportă formatul CSV standard pentru Homebox. Această acțiune ca exporta toate articolele din inventar.",
+            "export_sub": "Exportă formatul CSV standard pentru CasaOrganiza. Această acțiune ca exporta toate articolele din inventar.",
             "import": "Importă Inventar",
             "import_button": "Importă Inventar",
-            "import_sub": "Importă formatul standard CSV pentru Homebox. Fără un '<code>' HB.import_ref '</code>' coloană, aceasta va'<b>'nu'</b>' suprascrie orice elemente existente în inventarul dvs., adăugați doar elemente noi. Rânduri cu'<code>'HB.import_ref'</code>' coloana sunt îmbinate în elementele existente cu același import_ref, dacă există unul."
+            "import_sub": "Importă formatul standard CSV pentru CasaOrganiza. Fără un '<code>' HB.import_ref '</code>' coloană, aceasta va'<b>'nu'</b>' suprascrie orice elemente existente în inventarul dvs., adăugați doar elemente noi. Rânduri cu'<code>'HB.import_ref'</code>' coloana sunt îmbinate în elementele existente cu același import_ref, dacă există unul."
         },
-        "import_export_sub": "Importați și exportați inventarul într-un fișier CSV. Acest lucru este util atunci când se migrează inventarul către o instanță nouă de Homebox.",
+        "import_export_sub": "Importați și exportați inventarul într-un fișier CSV. Acest lucru este util atunci când se migrează inventarul către o instanță nouă de CasaOrganiza.",
         "reports": "Rapoarte",
         "reports_set": {
             "asset_labels": "Etichete de identificare a activului",

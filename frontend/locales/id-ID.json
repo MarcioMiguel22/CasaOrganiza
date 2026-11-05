@@ -420,7 +420,7 @@
             "ensure_import_refs_sub": "Memastikan semua item dalam inventaris Anda memiliki kolom import_ref yang valid. Hal ini dilakukan dengan membuat string 8 karakter acak untuk setiap item yang kolom import_ref-nya belum diatur.",
             "set_primary_photo": "Atur Foto Utama",
             "set_primary_photo_button": "Atur Foto Utama",
-            "set_primary_photo_sub": "Pada Homebox versi 0.10.0, kolom gambar utama ditambahkan ke lampiran bertipe foto. Ini akan mengatur kolom gambar utama ke gambar pertama dalam lampiran di database, jika belum diatur. '<a class=\"link\" href=\"https://github.com/hay-kot/homebox/pull/576\">'See GitHub PR #576'</a>'",
+            "set_primary_photo_sub": "Pada CasaOrganiza versi 0.10.0, kolom gambar utama ditambahkan ke lampiran bertipe foto. Ini akan mengatur kolom gambar utama ke gambar pertama dalam lampiran di database, jika belum diatur. '<a class=\"link\" href=\"https://github.com/hay-kot/homebox/pull/576\">'See GitHub PR #576'</a>'",
             "zero_datetimes": "Format Waktu Kosong",
             "zero_datetimes_button": "Format Waktu Kosong",
             "zero_datetimes_sub": "Mengatur ulang nilai waktu untuk semua bidang tanggal dan waktu di inventaris Anda ke awal tanggal. Ini untuk memperbaiki bug yang muncul di awal pengembangan situs yang menyebabkan nilai waktu disimpan bersama waktu, yang mengakibatkan masalah pada tampilan nilai tanggal yang akurat. '<a class=\"link\" href=\"https://github.com/hay-kot/homebox/issues/236\" target=\"_blank\">'See Github Issue #236 for more details.'</a>'"
@@ -430,12 +430,12 @@
         "import_export_set": {
             "export": "Ekspor Inventaris",
             "export_button": "Ekspor Inventaris",
-            "export_sub": "Mengekspor semua item ke file CSV dengan format standar Homebox.",
+            "export_sub": "Mengekspor semua item ke file CSV dengan format standar CasaOrganiza.",
             "import": "Impor Inventaris",
             "import_button": "Impor Inventaris",
-            "import_sub": "Mengimpor CSV dengan format standar Homebox. Tanpa kolom '<code>HB.import_ref</code>', impor ini <b>tidak</b> akan menimpa item yang sudah ada di inventaris Anda, hanya menambahkan item baru. Baris dengan kolom '<code>HB.import_ref</code>' akan digabungkan ke item yang sudah ada dengan import_ref yang sama, jika ada."
+            "import_sub": "Mengimpor CSV dengan format standar CasaOrganiza. Tanpa kolom '<code>HB.import_ref</code>', impor ini <b>tidak</b> akan menimpa item yang sudah ada di inventaris Anda, hanya menambahkan item baru. Baris dengan kolom '<code>HB.import_ref</code>' akan digabungkan ke item yang sudah ada dengan import_ref yang sama, jika ada."
         },
-        "import_export_sub": "Impor dan ekspor inventaris Anda ke dan dari file CSV. Ini berguna untuk memigrasikan inventaris Anda ke instance Homebox yang baru.",
+        "import_export_sub": "Impor dan ekspor inventaris Anda ke dan dari file CSV. Ini berguna untuk memigrasikan inventaris Anda ke instance CasaOrganiza yang baru.",
         "reports": "Laporan",
         "reports_set": {
             "asset_labels": "Label ID Aset",

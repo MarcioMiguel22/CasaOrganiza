@@ -607,8 +607,8 @@
             "bordered_labels": "ラベルの境界線を印刷",
             "generate_page": "印刷プレビューを取得",
             "input_placeholder": "ここに入力",
-            "instruction_1": "Homebox ラベルジェネレーターは、Homeboxに登録されたアイテムの管理シールを印刷するツールです。\nシールはアイテムを登録する前に印刷できるため、事前に大量作成することが可能です！",
-            "instruction_2": "シールには、HomeboxのQRコードやAsset IDを印刷できます。\nAsset IDを無効にしている場合でもこのツールは使用できますが、Asset IDを利用してアイテムページを開く機能などは利用できません。",
+            "instruction_1": "CasaOrganiza ラベルジェネレーターは、CasaOrganizaに登録されたアイテムの管理シールを印刷するツールです。\nシールはアイテムを登録する前に印刷できるため、事前に大量作成することが可能です！",
+            "instruction_2": "シールには、CasaOrganizaのQRコードやAsset IDを印刷できます。\nAsset IDを無効にしている場合でもこのツールは使用できますが、Asset IDを利用してアイテムページを開く機能などは利用できません。",
             "instruction_3": "この機能はまだ開発中であり、今後の更新で改修される可能性があります。\nバグ情報や機能提案がある方は、ぜひ'<a href=\"https://github.com/sysadminsmedia/homebox/discussions/53\">'GitHubディスカッションに投稿をお願いします。'</a>'",
             "label_height": "シール 高さ",
             "label_width": "シール 横幅",
@@ -658,7 +658,7 @@
             "set_primary_photo": "アイテムサムネイルの自動設定",
             "set_primary_photo_button": "操作を実行",
             "set_primary_photo_confirm": "サムネイルを自動設定します。'<br>'件数によっては時間がかかる場合があり、元に戻すことはできません。",
-            "set_primary_photo_sub": "Homebox v0.10.0 (2023年10月10日リリース)にて、アイテムのサムネイル画像を設定できるようになりました。'<br>'サムネイルが設定されていないアイテムは、この機能を利用して自動で設定できます。'<br>'この機能は、サムネイルが未設定のアイテムの添付画像の中で最も古い画像ファイルを自動的にサムネイルとして設定します。'<br>'詳しくは、'<a class=\"link\" target=\"_brank\" href=\"https://github.com/hay-kot/homebox/pull/576\">'このページをご覧ください (GitHub PR #576)'</a>'",
+            "set_primary_photo_sub": "CasaOrganiza v0.10.0 (2023年10月10日リリース)にて、アイテムのサムネイル画像を設定できるようになりました。'<br>'サムネイルが設定されていないアイテムは、この機能を利用して自動で設定できます。'<br>'この機能は、サムネイルが未設定のアイテムの添付画像の中で最も古い画像ファイルを自動的にサムネイルとして設定します。'<br>'詳しくは、'<a class=\"link\" target=\"_brank\" href=\"https://github.com/hay-kot/homebox/pull/576\">'このページをご覧ください (GitHub PR #576)'</a>'",
             "zero_datetimes": "アイテムに設定された日時を消去",
             "zero_datetimes_button": "操作を実行",
             "zero_datetimes_confirm": "すべてアイテムの日付と時刻の値をリセットします。'<br>'件数によっては時間がかかる場合があり、元に戻すことはできません。",
@@ -669,13 +669,13 @@
         "import_export_set": {
             "export": "エクスポート (出力)",
             "export_button": "エクスポートの実行",
-            "export_sub": "Homeboxで利用可能なCSV形式のファイルをエクスポートします。'<br>'すべてのアイテムが対象です。一部のアイテムを選択してエクスポートすることはできません。",
+            "export_sub": "CasaOrganizaで利用可能なCSV形式のファイルをエクスポートします。'<br>'すべてのアイテムが対象です。一部のアイテムを選択してエクスポートすることはできません。",
             "import": "インポート (CSVの取り込み)",
             "import_button": "CSVファイルを選択",
             "import_ref_confirm": "すべてのアイテムに import_ref の値があることを確認します。'<br>'件数によっては時間がかかる場合があり、元に戻すことはできません。",
-            "import_sub": "Homeboxで利用可能なCSVファイルをインポートします。\n'<code>'HB.import_ref'</code>'が存在しないアイテムに重複がある場合は上書きされません。\n'<code>'HB.import_ref'</code>'が存在するアイテムに重複がある場合は、同じ'<code>'HB.import_ref'</code>'を持つアイテムのデータが上書きされます。\nどちらも、重複していない場合は関係なく追加されます。"
+            "import_sub": "CasaOrganizaで利用可能なCSVファイルをインポートします。\n'<code>'HB.import_ref'</code>'が存在しないアイテムに重複がある場合は上書きされません。\n'<code>'HB.import_ref'</code>'が存在するアイテムに重複がある場合は、同じ'<code>'HB.import_ref'</code>'を持つアイテムのデータが上書きされます。\nどちらも、重複していない場合は関係なく追加されます。"
         },
-        "import_export_sub": "登録されたアイテムをCSVファイルにインポートおよびエクスポートします。Homeboxのソフトウェアを切り替える場合などに便利です。",
+        "import_export_sub": "登録されたアイテムをCSVファイルにインポートおよびエクスポートします。CasaOrganizaのソフトウェアを切り替える場合などに便利です。",
         "reports": "レポート",
         "reports_set": {
             "asset_labels": "管理ラベルの作成",

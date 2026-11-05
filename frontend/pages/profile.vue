@@ -33,7 +33,7 @@
     middleware: ["auth"],
   });
   useHead({
-    title: "HomeBox | " + t("menu.profile"),
+    title: "CasaOrganiza | " + t("menu.profile"),
   });
 
   const api = useUserApi();

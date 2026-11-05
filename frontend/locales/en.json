@@ -1160,13 +1160,13 @@
     },
     "pantry": {
         "title": "Pantry",
-        "subtitle": "Stock, expiry dates and shopping list inside HomeBox.",
+        "subtitle": "Stock, expiry dates and shopping list inside CasaOrganiza.",
         "refresh": "Refresh",
         "add_product": "Add product",
         "add_product_description": "Register it once, then update stock with one tap.",
         "product_name": "Product",
         "products": "Products",
-        "products_description": "Your food stock is stored in this HomeBox collection.",
+        "products_description": "Your food stock is stored in this CasaOrganiza collection.",
         "quantity": "Quantity",
         "minimum": "Minimum",
         "unit": "Unit",
@@ -1401,7 +1401,7 @@
             "create_missing_thumbnails": "Create Missing Thumbnails",
             "create_missing_thumbnails_button": "Create Thumbnails",
             "create_missing_thumbnails_confirm": "Are you sure you want to create missing thumbnails? This can take a while and cannot be paused.",
-            "create_missing_thumbnails_sub": "Creates thumbnails for all attachments that are supported by the current configuration. This is useful for attachments that were uploaded prior to the v0.20.0 release of Homebox. This will not overwrite existing thumbnails, only create new ones for attachments that do not have a thumbnail. Please note that the thumbnails are created in the background and may take a while to complete.",
+            "create_missing_thumbnails_sub": "Creates thumbnails for all attachments that are supported by the current configuration. This is useful for attachments that were uploaded prior to the v0.20.0 release of CasaOrganiza. This will not overwrite existing thumbnails, only create new ones for attachments that do not have a thumbnail. Please note that the thumbnails are created in the background and may take a while to complete.",
             "ensure_ids": "Ensure Asset IDs",
             "ensure_ids_button": "Ensure Asset IDs",
             "ensure_ids_confirm": "Are you sure you want to ensure all assets have an ID? This can take a while and cannot be undone.",
@@ -1412,7 +1412,7 @@
             "set_primary_photo": "Set Primary Photo",
             "set_primary_photo_button": "Set Primary Photo",
             "set_primary_photo_confirm": "Are you sure you want to set primary photos? This can take a while and cannot be undone.",
-            "set_primary_photo_sub": "In version v0.10.0 of Homebox, the primary image field was added to attachments of type photo. This action will set the primary image field to the first image in the attachments array in the database, if it is not already set. '<a class=\"link\" href=\"https://github.com/hay-kot/homebox/pull/576\">'See GitHub PR #576'</a>'",
+            "set_primary_photo_sub": "In version v0.10.0 of CasaOrganiza, the primary image field was added to attachments of type photo. This action will set the primary image field to the first image in the attachments array in the database, if it is not already set. '<a class=\"link\" href=\"https://github.com/hay-kot/homebox/pull/576\">'See GitHub PR #576'</a>'",
             "wipe_inventory": "Wipe Inventory",
             "wipe_inventory_button": "Wipe Inventory",
             "wipe_inventory_confirm": "Are you sure you want to wipe your entire inventory? This will delete all items and cannot be undone.",
@@ -1448,19 +1448,19 @@
         },
         "backups_sub": "Export your entire collection — entities, tags, attachments, and metadata — to a portable zip archive. Restore an archive into a freshly registered, empty collection on this or another server.",
         "demo_mode_error": {
-            "wipe_inventory": "Inventory, tags, locations and maintenance records cannot be wiped whilst Homebox is in demo mode. Please ensure that you are not in demo mode and try again."
+            "wipe_inventory": "Inventory, tags, locations and maintenance records cannot be wiped whilst CasaOrganiza is in demo mode. Please ensure that you are not in demo mode and try again."
         },
         "import_export": "Import/Export",
         "import_export_set": {
             "export": "Export Inventory",
             "export_button": "Export Inventory",
-            "export_sub": "Exports the standard CSV format for Homebox. This will export all items in your inventory.",
+            "export_sub": "Exports the standard CSV format for CasaOrganiza. This will export all items in your inventory.",
             "import": "Import Inventory",
             "import_button": "Import Inventory",
             "import_ref_confirm": "Are you sure you want to ensure all assets have an import_ref? This can take a while and cannot be undone.",
-            "import_sub": "Imports the standard CSV format for Homebox. Without an '<code>'HB.import_ref'</code>' column, this will '<b>'not'</b>' overwrite any existing items in your inventory, only add new items. Rows with an '<code>'HB.import_ref'</code>' column are merged into existing items with the same import_ref, if one exists."
+            "import_sub": "Imports the standard CSV format for CasaOrganiza. Without an '<code>'HB.import_ref'</code>' column, this will '<b>'not'</b>' overwrite any existing items in your inventory, only add new items. Rows with an '<code>'HB.import_ref'</code>' column are merged into existing items with the same import_ref, if one exists."
         },
-        "import_export_sub": "Import and export your inventory to and from a CSV file. This is useful for migrating your inventory to a new instance of Homebox.",
+        "import_export_sub": "Import and export your inventory to and from a CSV file. This is useful for migrating your inventory to a new instance of CasaOrganiza.",
         "reports": "Reports",
         "reports_set": {
             "asset_labels": "Asset ID Labels",

@@ -11,6 +11,6 @@
   });
 
   useHead({
-    title: "HomeBox | AR Scanner",
+    title: "CasaOrganiza | AR Scanner",
   });
 </script>

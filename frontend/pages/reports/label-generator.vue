@@ -26,7 +26,7 @@
   });
 
   useHead({
-    title: computed(() => `HomeBox | ${t("reports.label_generator.title")}`),
+    title: computed(() => `CasaOrganiza | ${t("reports.label_generator.title")}`),
   });
 
   const api = useUserApi();

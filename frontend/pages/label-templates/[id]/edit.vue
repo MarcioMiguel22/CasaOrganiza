@@ -45,7 +45,7 @@
   const templateId = computed(() => route.params.id as string);
 
   useHead({
-    title: computed(() => `HomeBox | ${t("components.label_template.editor.title")}`),
+    title: computed(() => `CasaOrganiza | ${t("components.label_template.editor.title")}`),
   });
 
   const { template, pending, refresh } = useLabelTemplate(templateId);

@@ -2,7 +2,7 @@
   <img src="/docs/src/assets/lilbox.svg" height="200"/>
 </div>
 
-<h1 align="center" style="margin-top: -10px;"> HomeBox </h1>
+<h1 align="center" style="margin-top: -10px;"> CasaOrganiza </h1>
 <p align="center" style="width: 100%;">
    <a href="https://homebox.software/en/">Docs</a>
    |
@@ -25,13 +25,13 @@
   <a href="https://www.pikapods.com/pods?run=homebox"><img src="https://www.pikapods.com/static/run-button.svg"/></a>
 </p>
 
-## What is HomeBox
+## What is CasaOrganiza
 
-HomeBox is the inventory and organization system built for the Home User! With a focus on simplicity and ease of use, Homebox is the perfect solution for your home inventory, organization, and management needs. While developing this project, We've tried to keep the following principles in mind:
+CasaOrganiza is the inventory and organization system built for the Home User! With a focus on simplicity and ease of use, CasaOrganiza is the perfect solution for your home inventory, organization, and management needs. While developing this project, We've tried to keep the following principles in mind:
 
-- 🧘 _Simple but Expandable_ - Homebox is designed to be simple and easy to use. No complicated setup or configuration required. But expandable to whatever level of infrastructure you want to put into it.
-- 🚀 _Blazingly Fast_ - Homebox is written in Go, which makes it extremely fast and requires minimal resources to deploy. In general, idle memory usage is less than 50MB for the whole container.
-- 📦 _Portable_ - Homebox is designed to be portable and run on anywhere. We use SQLite and an embedded Web UI to make it easy to deploy, use, and backup.
+- 🧘 _Simple but Expandable_ - CasaOrganiza is designed to be simple and easy to use. No complicated setup or configuration required. But expandable to whatever level of infrastructure you want to put into it.
+- 🚀 _Blazingly Fast_ - CasaOrganiza is written in Go, which makes it extremely fast and requires minimal resources to deploy. In general, idle memory usage is less than 50MB for the whole container.
+- 📦 _Portable_ - CasaOrganiza is designed to be portable and run on anywhere. We use SQLite and an embedded Web UI to make it easy to deploy, use, and backup.
 
 ### Key Features
 - 📇 Rich Organization - Organize your items into categories, locations, and tags. You can also create custom fields to store additional information about your items.
@@ -39,7 +39,7 @@ HomeBox is the inventory and organization system built for the Home User! With a
 - 📸 Image Upload - Upload images of your items to make it easy to identify them.
 - 📄 Document and Warranty Tracking - Keep track of important documents and warranties for your items.
 - 💰 Purchase & Maintenance Tracking - Track purchase dates, prices, and maintenance schedules for your items.
-- 📱 Responsive Design - Homebox is designed to work on any device, including desktops, tablets, and smartphones.
+- 📱 Responsive Design - CasaOrganiza is designed to work on any device, including desktops, tablets, and smartphones.
 
 ## Screenshots
 ![Login Screen](.github/screenshots/1.png)
@@ -48,7 +48,7 @@ HomeBox is the inventory and organization system built for the Home User! With a
 ![Create Item](.github/screenshots/9.png)
 ![Search](.github/screenshots/8.png)
 
-You can also try the demo instances of Homebox:
+You can also try the demo instances of CasaOrganiza:
 - [Demo](https://demo.homebox.software)
 - [Nightly](https://nightly.homebox.software)
 
@@ -87,7 +87,7 @@ To get started with code based contributions, please see our [contributing guide
 If you are not a coder and can't help translate, you can still contribute financially. Financial contributions help us maintain the project and keep demos running.
 
 ## Help us Translate
-We want to make sure that Homebox is available in as many languages as possible. If you are interested in helping us translate Homebox, please help us via our [Weblate instance](https://translate.sysadminsmedia.com/projects/homebox/).
+We want to make sure that CasaOrganiza is available in as many languages as possible. If you are interested in helping us translate CasaOrganiza, please help us via our [Weblate instance](https://translate.sysadminsmedia.com/projects/homebox/).
 
 [![Translation status](https://translate.sysadminsmedia.com/widget/homebox/multi-auto.svg)](https://translate.sysadminsmedia.com/engage/homebox/)
 
