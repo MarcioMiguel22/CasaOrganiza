@@ -325,6 +325,7 @@
   const { isOverDropZone: attDropZoneActive } = useDropZone(attDropZone);
 
   const refAttachmentInput = ref<HTMLInputElement>();
+  const refReceiptInput = ref<HTMLInputElement>();
 
   function clickUpload() {
     if (!refAttachmentInput.value) {
@@ -333,18 +334,31 @@
     refAttachmentInput.value.click();
   }
 
-  function uploadImage(e: Event) {
+  function clickReceiptUpload() {
+    if (!refReceiptInput.value) {
+      return;
+    }
+    refReceiptInput.value.click();
+  }
+
+  async function uploadImage(e: Event) {
     const files = (e.target as HTMLInputElement).files;
-    if (!files || !files.item(0)) {
+    if (!files || files.length === 0) {
       return;
     }
 
-    const first = files.item(0);
-    if (!first) {
+    await uploadAttachment(Array.from(files), null);
+    (e.target as HTMLInputElement).value = "";
+  }
+
+  async function uploadReceiptImages(e: Event) {
+    const files = (e.target as HTMLInputElement).files;
+    if (!files || files.length === 0) {
       return;
     }
 
-    uploadAttachment([first], null);
+    await uploadAttachment(Array.from(files), AttachmentTypes.Receipt);
+    (e.target as HTMLInputElement).value = "";
   }
 
   const dropPhoto = (files: File[] | null) => uploadAttachment(files, AttachmentTypes.Photo);
@@ -425,22 +439,41 @@
   }
 
   async function uploadAttachment(files: File[] | null, type: AttachmentTypes | null) {
-    if (!files || files.length === 0 || !files[0]) {
+    const selectedFiles = files?.filter(file => file.size > 0) ?? [];
+    if (selectedFiles.length === 0) {
       return;
     }
 
-    const { data, error, status } = await api.items.attachments.add(itemId.value, files[0], files[0].name, type);
+    let uploaded = 0;
+    let failed = 0;
+    let tooLarge = false;
 
-    if (error) {
-      toast.error(status === 413 ? t("items.toast.attachment_too_large") : t("items.toast.failed_upload_attachment"));
-      return;
+    // The API accepts one multipart file per request. Upload selected files
+    // sequentially so every image is persisted and the attachment list stays
+    // in sync with the editor.
+    for (const file of selectedFiles) {
+      const { data, error, status } = await api.items.attachments.add(itemId.value, file, file.name, type);
+
+      if (error) {
+        failed += 1;
+        tooLarge = tooLarge || status === 413;
+        continue;
+      }
+
+      uploaded += 1;
+      if (data) {
+        item.value.attachments = data.attachments;
+      }
     }
 
-    toast.success(t("items.toast.attachment_uploaded"));
+    if (uploaded > 0) {
+      toast.success(t("items.toast.attachment_uploaded"));
+      await saveItem(false);
+    }
 
-    await saveItem(false);
-
-    item.value.attachments = data.attachments;
+    if (failed > 0) {
+      toast.error(tooLarge ? t("items.toast.attachment_too_large") : t("items.toast.failed_upload_attachment"));
+    }
   }
 
   const confirm = useConfirm();
@@ -822,7 +855,14 @@
               class="grid h-24 w-full place-content-center border-2 border-dashed border-primary"
               @click="clickUpload"
             >
-              <input ref="refAttachmentInput" hidden type="file" @change="uploadImage" />
+              <input
+                ref="refAttachmentInput"
+                hidden
+                type="file"
+                accept="image/*,application/pdf"
+                multiple
+                @change="uploadImage"
+              />
               <p>{{ $t("items.drag_and_drop") }}</p>
             </button>
           </div>
@@ -951,6 +991,27 @@
                   v-model="item[field.ref]"
                   :label="$t(field.label)"
                   inline
+                />
+              </div>
+            </div>
+          </div>
+          <div class="border-t p-4 sm:px-6">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <p class="font-medium">{{ $t("items.receipts") }}</p>
+                <p class="text-xs text-muted-foreground">{{ $t("items.changes_persisted_immediately") }}</p>
+              </div>
+              <div>
+                <Button type="button" variant="outline" @click="clickReceiptUpload">
+                  {{ $t("items.receipts") }}
+                </Button>
+                <input
+                  ref="refReceiptInput"
+                  hidden
+                  type="file"
+                  accept="image/*,application/pdf"
+                  multiple
+                  @change="uploadReceiptImages"
                 />
               </div>
             </div>

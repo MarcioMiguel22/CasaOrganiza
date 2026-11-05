@@ -304,7 +304,10 @@
   import CollectionInviteCreateModal from "~/components/Collection/InviteCreateModal.vue";
 
   const { t, locale } = useI18n();
-  const username = computed(() => authCtx.user?.name || "User");
+  const username = computed(() => {
+    const fullName = authCtx.user?.name?.trim();
+    return fullName ? fullName.split(/\s+/)[0] : "User";
+  });
 
   const { openDialog } = useDialog();
 
