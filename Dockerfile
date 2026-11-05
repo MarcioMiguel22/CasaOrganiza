@@ -54,7 +54,7 @@ RUN rm -rf ./app/api/public
 COPY --from=frontend-builder /app/.output/public ./app/api/static/public
 
 # Use cache for Go build artifacts
-RUN --mount=type=cache,target=/root/.cache/go-build \
+RUN --mount=type=cache,id=s/dc26f92f-76b5-4b76-83f8-1c87cbdca268-/root/.cache/go-build,target=/root/.cache/go-build \
     if [ "$TARGETARCH" = "arm" ] || [ "$TARGETARCH" = "riscv64" ];  \
     then echo "nodynamic" $TARGETOS $TARGETARCH; CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH go build \
         -ldflags "-s -w -X main.commit=$COMMIT -X main.buildTime=$BUILD_TIME -X main.version=$VERSION" \
@@ -92,9 +92,6 @@ WORKDIR /app
 # Healthcheck configuration
 HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
     CMD [ "wget", "--no-verbose", "--tries=1", "-O", "-", "http://localhost:7745/api/v1/status" ]
-
-# Persist volume
-VOLUME [ "/data" ]
 
 # Entrypoint and CMD
 ENTRYPOINT [ "/app/api" ]
